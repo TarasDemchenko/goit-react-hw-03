@@ -1,7 +1,7 @@
 import { RiPhoneFindLine } from "react-icons/ri";
-import css from "./SearchForm.module.css";
+import css from "./SearchBox.module.css";
 
-const SearchForm = ({ value, handleFiltechange }) => {
+const SearchBox = ({ value, handleFiltechange }) => {
   return (
     <>
       <div className={css.search_form}>
@@ -21,4 +21,4 @@ const SearchForm = ({ value, handleFiltechange }) => {
   );
 };
 
-export default SearchForm;
+export default SearchBox;

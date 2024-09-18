@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import ContactForm from "./components/contactForm/ContactForm";
-import SearchForm from "./components/searchForm/SearchForm";
+import SearchBox from "./components/searchBox/SearchBox";
 import ContactList from "./components/contactList/ContactList";
 import { nanoid } from "nanoid";
 
@@ -48,7 +48,7 @@ const App = () => {
     <div>
       <h1>Phonebook</h1>
       <ContactForm addContacts={addContacts} />
-      <SearchForm value={search} handleFiltechange={handleFiltechange} />
+      <SearchBox value={search} handleFiltechange={handleFiltechange} />
       <ContactList contacts={getFilterContacts()} handleDelete={handleDelete} />
     </div>
   );
